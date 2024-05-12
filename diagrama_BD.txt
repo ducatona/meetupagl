@@ -1,0 +1,30 @@
+DIAGRAMA BD v1:
+
+
++-------------+    +-------------+    +----------------+    +-------------+
+|   users     |    |   likes     |    |  conversations |    |  messages   |
++-------------+    +-------------+    +----------------+    +-------------+
+| id_user (PK)|    | id_like (PK)|    | id_conversation|    | id_message  |
+| user        |    | id_user (FK)|    | id_user1 (FK)  |    | id_conversation (FK)|
+| password    |    | id_liked_user(FK)| | id_user2 (FK)  |    | id_sender (FK)       |
+| active      |    +-------------+    +----------------+    | content     |
+|             |                     |                    | timestamp   |
++-------------+                     +---------------------+-------------+
+
+
+
+Explicación
+
+Tabla de Usuarios (users):
+
+Esta tabla almacena la información de los usuarios registrados en la aplicación de citas. Cada usuario tiene un identificador único (id_user), un nombre de usuario (user), una contraseña (password), y un indicador de si el usuario está activo o no (active).
+Tabla de Me gusta (likes):
+
+Esta tabla registra las interacciones de "me gusta" entre usuarios. Cada entrada en esta tabla representa un "like" dado por un usuario a otro usuario. Tiene un identificador único (id_like) y referencias a los identificadores de los usuarios que dan y reciben el "like" (id_user y id_liked_user, respectivamente).
+Tabla de Conversaciones (conversations):
+
+Esta tabla almacena información sobre las conversaciones entre usuarios que se han dado "like" mutuamente. Cada entrada en esta tabla representa una conversación entre dos usuarios. Tiene un identificador único (id_conversation) y referencias a los identificadores de los dos usuarios involucrados en la conversación (id_user1 y id_user2).
+Tabla de Mensajes (messages):
+
+Esta tabla registra los mensajes intercambiados entre usuarios en las conversaciones. Cada entrada en esta tabla representa un mensaje enviado por un usuario en una conversación. Tiene un identificador único (id_message), referencias al identificador de la conversación a la que pertenece el mensaje (id_conversation), al identificador del usuario que envió el mensaje (id_sender), el contenido del mensaje (content), y una marca de tiempo (timestamp) que indica cuándo se envió el mensaje.
+Estas tablas trabajan juntas para almacenar la información necesaria para gestionar las interacciones entre usuarios, incluyendo los "me gusta" mutuos, las conversaciones entre usuarios interesados, y los mensajes intercambiados en esas conversaciones.
