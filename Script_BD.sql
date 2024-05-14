@@ -4,15 +4,16 @@ USE meet_up_agl;
 
 -- Tabla de Usuarios
 CREATE TABLE users (
-    id_user INT PRIMARY KEY,
+    id_user INT PRIMARY KEY auto_increment,
     user VARCHAR(255),
     password VARCHAR(255),
-    active BOOLEAN
+    active BOOLEAN 
+    
 );
 
 -- Tabla de Me gusta
 CREATE TABLE likes (
-    id_like INT PRIMARY KEY,
+    id_like INT PRIMARY KEY auto_increment,
     id_user INT,
     id_liked_user INT,
     FOREIGN KEY (id_user) REFERENCES users(id_user),
@@ -21,7 +22,7 @@ CREATE TABLE likes (
 
 -- Tabla de Conversaciones
 CREATE TABLE conversations (
-    id_conversation INT PRIMARY KEY,
+    id_conversation INT PRIMARY KEY auto_increment,
     id_user1 INT,
     id_user2 INT,
     FOREIGN KEY (id_user1) REFERENCES users(id_user),
@@ -30,7 +31,7 @@ CREATE TABLE conversations (
 
 -- Tabla de Mensajes
 CREATE TABLE messages (
-    id_message INT PRIMARY KEY,
+    id_message INT PRIMARY KEY auto_increment,
     id_conversation INT,
     id_sender INT,
     content TEXT,
