@@ -13,7 +13,7 @@ import javax.swing.JPanel;
  *
  * @author Adrián Peña Carnero
  */
-public class home extends javax.swing.JFrame {
+public class Home extends javax.swing.JFrame {
 
     
      final String rutaImagen = "/img/logo.png";
@@ -21,8 +21,10 @@ public class home extends javax.swing.JFrame {
     /**
      * Creates new form home
      */
-    public home() {
+    public Home() {
         initComponents();
+        this.setLocationRelativeTo(null);
+        this.setResizable(false);
     }
 
     /**
@@ -46,6 +48,11 @@ public class home extends javax.swing.JFrame {
         jLabel1.setText("BIENVENIDO INTERNAUTA");
 
         jButton1.setText("INICIAR SESION");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
 
         jButton2.setText("REGISTRARSE");
 
@@ -93,6 +100,15 @@ public class home extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        
+        this.setVisible(false);
+        Login l = new Login();
+        l.setVisible(true);
+        
+        
+    }//GEN-LAST:event_jButton1ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -110,20 +126,21 @@ public class home extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(home.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Home.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(home.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Home.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(home.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Home.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(home.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Home.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new home().setVisible(true);
+                new Home().setVisible(true);
             }
         });
     }
