@@ -30,12 +30,6 @@ INSERT INTO messages (id_conversation, id_sender, content) VALUES
                 (3, 3, 'Hola Cathy, encantado de conocerte.'),
                 (3, 4, 'Encantada de conocerte también, Bob.');
 
--- Datos de prueba para la tabla de Perfiles
-INSERT INTO profiles (id_user, first_name, last_name, age, gender, bio, profile_picture) VALUES
-                (1, 'John', 'Doe', 20, 'Masculino', 'Aficionado a la lectura y amante del café.', 'https://example.com/profiles/jdoe.jpg'),
-                (2, 'Anna', 'Smith', 22, 'Femenino', 'Amante de las caminatas y las aventuras al aire libre.', 'https://example.com/profiles/asmith.jpg'),
-                (3, 'Bob', 'Williams', 21, 'Masculino', 'Geek de la tecnología y gamer.', 'https://example.com/profiles/bwilliams.jpg'),
-                (4, 'Cathy', 'Jones', 19, 'Femenino', 'Amante de la música y chef aficionada.', 'https://example.com/profiles/cjones.jpg');
 
 -- Datos de prueba para la tabla de Amigos
 INSERT INTO friends (id_user1, id_user2, status) VALUES
