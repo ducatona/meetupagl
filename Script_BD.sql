@@ -50,18 +50,7 @@ CREATE TABLE messages (
                           FOREIGN KEY (id_sender) REFERENCES users(id_user)
 );
 
--- Tabla de Perfiles
-CREATE TABLE profiles (
-                          id_profile INT PRIMARY KEY AUTO_INCREMENT,
-                          id_user INT,
-                          first_name VARCHAR(50),
-                          last_name VARCHAR(50),
-                          age INT,
-                          gender VARCHAR(10),
-                          bio TEXT,
-                          profile_picture VARCHAR(255),
-                          FOREIGN KEY (id_user) REFERENCES users(id_user)
-);
+
 
 -- Tabla de Amigos
 CREATE TABLE friends (
