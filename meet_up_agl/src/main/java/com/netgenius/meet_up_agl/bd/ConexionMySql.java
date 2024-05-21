@@ -15,7 +15,7 @@ import java.sql.SQLException;
 public class ConexionMySql {
 
     // Librería de MySQL
-    public String driver = "com.mysql.jdbc.Driver";
+    public String driver = "com.mysql.cj.jdbc.Driver";
 
     // Nombre de la base de datos
     public String database = "meet_up_agl";
@@ -33,7 +33,7 @@ public class ConexionMySql {
     public String username = "root";
 
     // Clave de usuario
-    public String password = "";
+    public String password = "1234";
 
     public Connection conectarMySQL() {
         Connection conn = null;
