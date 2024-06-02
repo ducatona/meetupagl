@@ -16,10 +16,12 @@ CREATE TABLE users (
     age INT,
     gender VARCHAR(10),
     bio TEXT,
-    profile_picture VARCHAR(255),
+    profile_picture BLOB, -- Almacenar la imagen directamente
+    estudios VARCHAR(50),
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 );
+
 
 -- Table for Posts
 CREATE TABLE posts (
