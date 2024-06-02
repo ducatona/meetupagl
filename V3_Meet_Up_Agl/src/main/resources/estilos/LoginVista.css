@@ -1,0 +1,44 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+
+.root {
+    -fx-background: linear-gradient(from 0% 0% to 100% 100%, #F8EDEB, #C5E0DC); /* Gradiente de rosa claro a azul claro */
+    -fx-pref-width: 1280;
+    -fx-pref-height: 1024;
+    -fx-alignment: center; /* Centrar contenido */
+}
+
+.button {
+    -fx-background-color: #A2C8CC; /* Azul verde pastel */
+    -fx-text-fill: #FFFFFF; /* Texto blanco para buen contraste */
+    -fx-border-radius: 10;
+    -fx-pref-width: 150px;
+    -fx-pref-height: 40px;
+    -fx-font-size: 16px;
+    -fx-margin: 20px 0 0 0;
+}
+
+.text-field {
+    -fx-background-color: #FFFFFF; /* Blanco para buena legibilidad */
+    -fx-border-color: #A2C8CC; /* Azul verde pastel */
+    -fx-border-radius: 10;
+    -fx-pref-width: 400px;
+    -fx-pref-height: 30px;
+    -fx-font-size: 14px;
+    -fx-text-fill: #696969; /* Gris oscuro para buen contraste */
+    -fx-alignment: center; /* Centrar contenido */
+}
+
+.lbl {
+    -fx-background-color: #D8BFD8; /* Lavanda pastel */
+    -fx-text-fill: #696969; /* Gris oscuro */
+    -fx-border-radius: 5;
+    -fx-pref-width: 200px;
+    -fx-pref-height: 30px;
+    -fx-font-size: 14px;
+    -fx-alignment: center; /* Centrar contenido */
+}
+
+

@@ -1,0 +1,135 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/*
+    Created on : 25 may 2024, 12:16:23
+    Author     : Usuario
+*/
+
+/* General styles for the root */
+.root {
+    -fx-background: linear-gradient(from 0% 0% to 0% 100%, #F8EDEB, #C5E0DC); /* Gradiente de rosa claro a azul claro pastel */
+    -fx-font-family: "Arial", sans-serif; /* General font */
+}
+
+/* Button styles */
+.button {
+    -fx-background-color: #A2C8CC; /* Azul verde pastel */
+    -fx-text-fill: #FFFFFF; /* White text */
+    -fx-border-color: #89CFF0; /* Azul claro border */
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+    -fx-padding: 5px 10px; /* Ajuste de padding */
+    -fx-margin: 10px; /* Margen */
+}
+
+/* Label styles */
+.label {
+    -fx-text-fill: #696969; /* Gris oscuro */
+    -fx-font-size: 14px;
+    -fx-padding: 5px;
+}
+
+/* TextField styles */
+.text-field {
+    -fx-background-color: #F8E0E0; /* Rosa pastel */
+    -fx-border-color: #89CFF0; /* Azul claro border */
+    -fx-text-fill: #696969; /* Gris oscuro text */
+    -fx-background-radius: 10px;
+    -fx-border-radius: 10px;
+    -fx-padding: 5px;
+    -fx-margin: 10px; /* Margen */
+}
+
+/* ListView styles */
+.list-view {
+    -fx-background-color: #F8E0E0; /* Rosa pastel */
+    -fx-control-inner-background: #FFFFFF;
+    -fx-border-color: #89CFF0; /* Azul claro border */
+    -fx-cell-hover-color: #A2C8CC; /* Azul verde pastel for hovered cells */
+    -fx-text-fill: #696969; /* Gris oscuro text */
+    -fx-background-radius: 10px;
+    -fx-border-radius: 10px;
+    -fx-padding: 5px;
+    -fx-margin: 10px; /* Margen */
+}
+
+/* General Pane styles */
+.pane {
+    -fx-background-color: #F0F8FF; /* Azul claro pastel */
+    -fx-border-color: #89CFF0; /* Azul claro border */
+    -fx-border-width: 1px;
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+    -fx-padding: 10px;
+    -fx-margin: 10px; /* Margen */
+}
+
+/* StackPane styles */
+.stack-pane {
+    -fx-background-color: #F0F8FF; /* Azul claro pastel */
+    -fx-padding: 10px;
+}
+
+/* Specific Panel styles */
+#panel1 {
+    -fx-background-color: #F0F8FF; /* Azul claro pastel */
+    -fx-border-color: #89CFF0; /* Azul claro border */
+    -fx-border-width: 1px;
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+    -fx-padding: 10px;
+    -fx-margin: 10px; /* Margen */
+}
+
+#panel2 {
+    -fx-background-color: #F8E0E0; /* Rosa pastel */
+    -fx-border-color: #89CFF0; /* Azul claro border */
+    -fx-border-width: 1px;
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+    -fx-padding: 10px;
+    -fx-margin: 10px; /* Margen */
+}
+
+#panel3 {
+    -fx-background-color: #A2C8CC; /* Azul verde pastel */
+    -fx-border-color: #89CFF0; /* Azul claro border */
+    -fx-border-width: 1px;
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+    -fx-padding: 10px;
+    -fx-margin: 10px; /* Margen */
+}
+
+#panel4 {
+    -fx-background-color: #F8E0E0; /* Rosa pastel */
+    -fx-border-color: #89CFF0; /* Azul claro border */
+    -fx-border-width: 1px;
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+    -fx-padding: 10px;
+    -fx-margin: 10px; /* Margen */
+}
+
+#panel5 {
+    -fx-background-color: #A2C8CC; /* Azul verde pastel */
+    -fx-border-color: #89CFF0; /* Azul claro border */
+    -fx-border-width: 1px;
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+    -fx-padding: 10px;
+    -fx-margin: 10px; /* Margen */
+}
+
+/* Additional Panel styles */
+.panel {
+    -fx-background-color: #F0F8FF; /* Azul claro pastel */
+    -fx-border-color: #89CFF0; /* Azul claro border */
+    -fx-border-width: 1px;
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+    -fx-padding: 10px;
+    -fx-margin: 10px; /* Margen */
+}

@@ -1,0 +1,100 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 29 may 2024, 17:48:48
+    Author     : Usuario
+*/
+
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 29 may 2024, 17:48:48
+    Author     : Usuario
+*/
+.root {
+    -fx-background: linear-gradient(from 0% 0% to 100% 100%, #F8EDEB, #C5E0DC); /* Gradiente de rosa claro a azul claro */
+    -fx-pref-width: 800;
+    -fx-pref-height: 700;
+    -fx-spacing: 50;
+}
+
+#contForm {
+    -fx-spacing: 50;
+    -fx-alignment: CENTER;
+    -fx-margin: 25;
+    -fx-pref-width: 350;
+    -fx-pref-height: 700;
+}
+
+#contForm .vbox {
+    -fx-spacing: 20;
+    -fx-alignment: TOP_CENTER;
+    -fx-padding: 50 0 0 0;
+    -fx-pref-width: 350;
+    -fx-pref-height: 700;
+}
+
+.text-field {
+    -fx-background-color: #FFFFFF; /* Blanco para buena legibilidad */
+    -fx-border-color: #A2C8CC; /* Azul verde pastel */
+    -fx-border-radius: 10;
+    -fx-pref-width: 300;
+    -fx-pref-height: 40;
+    -fx-text-fill: #696969; /* Gris oscuro para buen contraste */
+    -fx-font-size: 14px;
+}
+
+.combo-box {
+    -fx-background-color: #FFFFFF; /* Blanco para buena legibilidad */
+    -fx-border-color: #A2C8CC; /* Azul verde pastel */
+    -fx-border-radius: 10;
+    -fx-pref-width: 300;
+    -fx-pref-height: 40;
+    -fx-text-fill: #696969; /* Gris oscuro para buen contraste */
+    -fx-font-size: 14px;
+}
+
+.button {
+    -fx-background-color: #A2C8CC; /* Azul verde pastel */
+    -fx-text-fill: #FFFFFF; /* Texto blanco para buen contraste */
+    -fx-border-radius: 10;
+    -fx-pref-width: 150;
+    -fx-pref-height: 50;
+    -fx-font-size: 16px;
+    -fx-margin: 20 0 0 0;
+}
+
+.date-picker {
+    -fx-background-color: #FFFFFF; /* Blanco para buena legibilidad */
+    -fx-border-color: #A2C8CC; /* Azul verde pastel */
+    -fx-border-radius: 10;
+    -fx-pref-width: 300;
+    -fx-pref-height: 40;
+    -fx-text-fill: #696969; /* Gris oscuro para buen contraste */
+    -fx-font-size: 14px;
+}
+
+.date-picker .cell:hover {
+    -fx-background-color: #C5E0DC; /* Azul claro pastel */
+    -fx-text-fill: #1e90ff; /* Azul oscuro */
+}
+
+.date-picker .arrow-button {
+    -fx-background-color: #A2C8CC; /* Azul verde pastel */
+    -fx-max-width: 20;
+    -fx-max-height: 20;
+}
+
+.date-picker-popup .month-year-pane .label {
+    -fx-text-fill: #1e90ff; /* Azul oscuro */
+}
+
+/* Label styles */
+.label {
+    -fx-text-fill: #1e90ff; /* Azul oscuro */
+    -fx-font-size: 14px;
+}
